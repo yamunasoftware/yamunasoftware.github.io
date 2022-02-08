@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="description" content="Yamuna Website" />
+<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover" />
+<meta name="theme-color" content="#EEEEEE" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+<head>
+  <title> Yamuna Software </title>
+    
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/src/Images/medium_icon.png" />
+  <link rel="apple-touch-startup-image" href="/src/Images/medium_icon.png" />
+  <link rel="shortcut icon" type="image/png" href="/src/Images/small_icon.png" />
+</head>
+
+<link rel="stylesheet" type="text/css" href="/src/CSS/style.css" />
+<link rel="stylesheet" type="text/css" href="/src/CSS/fonts.css" />
+
+<body>
+  <script>
+    //Registers the Service Worker:
+    navigator.serviceWorker.register('/service-worker.js', {
+      scope: 'https://yamunasoftware.github.io'
+    });
+
+    //Opens the Sidebar:
+    function openBar() {
+      //Opens:
+      document.getElementById('sidebar').style.display = "block";
+      document.getElementById('content').style.display = "none";
+    }
+
+    //Closes the Sidebar:
+    function closeBar() {
+      //Closes:
+      document.getElementById('sidebar').style.display = "none";
+      document.getElementById('content').style.display = "block";
+    }
+
+    //Window Resize Event:
+    window.addEventListener('resize', function () {
+      //Reloads the Page:
+      window.location.reload();
+    });
+  </script>
+
+  <div id="sidebar" class="slide">
+    <button id="nav-icon" class="slide" onclick="closeBar();">x</button>
+    <button id="nav-group" class="slide" onclick="window.location.href = '/index.html';">Home</button>
+    <button id="nav-group" class="slide selected"
+      onclick="window.location.href = '/src/HTML/product.html';">OpenML</button>
+    <button id="nav-group" class="slide" onclick="window.location.href = '/src/HTML/contact.html';">About</button>
+  </div>
+
+  <div id="content">
+    <div id="container" class="mesh-gradient">
+      <header>
+        <div id="title">&nbsp;YSS<a class="accent">;</a>
+          <button id="group" class="group" onclick="window.location.href = '/src/HTML/contact.html';">About</button>
+          <button id="group" class="group selected"
+            onclick="window.location.href = '/src/HTML/product.html';">OpenML</button>
+          <button id="group" class="group" onclick="window.location.href = '/index.html';">Home</button>
+          <button id="menu" onclick="openBar();">
+            <div id="bar1"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <!-- Product Start -->
+        <div class="animationContainer important center pad bottom-pad">
+          <div class="startPad">
+            <div class="color" style="margin-bottom: 30px;"> OpenML </div>
+            <br />
+
+            Professional ML Tools, Open-Sourced.
+          </div>
+
+          <button id="startButton" class="margin" onclick="window.open('https://github.com/yamunasoftware');">
+            View Github </button>
+        </div>
+      </main>
+
+      <br />
+      <br />
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- About -->
+    <div id="about" class="coloredContainer lightCard center spacing pad">
+      <div class="center important extra-important"> About OpenML </div>
+      <br />
+
+      <div>
+        OpenML is a collection of tools that we use at Yamuna Software regularly that we have open-sourced
+        to the public. We use these tools in our applications and we have others that use these libraries
+        in their development environment. 
+
+        <br />
+        <br />
+
+        The tools work through a genetic algorithm which takes in a series of inputs and evolves a single or a 
+        set of weights until a desired action is performed. Furthermore, a secondary algorithm is used as a lookup table 
+        to verify the results of the genetic algorithm. Scroll down to learn more.
+      </div>
+      <br />
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- Surabhi.js -->
+    <div id="javascript" class="coloredContainer spacing center cardStyle">
+      <div class="center important extra-important"> Surabhi.js </div>
+      <br />
+
+      <div>
+        This Surabhi.js library contains two learning algorithms: bison and bison-evolve, all of which
+        can be used for many different uses.
+        The bison and bison-evolve algorithms start with no knowledge about strategy and such, but they learn about
+        their
+        surroundings and make decisions accordingly.
+        The bison algorithm is a q-based learning method that explores its environment randomly until it finds and
+        optimal
+        move. The bison-evolve algorithm is based upon
+        the bison algorithm because it also tries to explore its environment to make the best move to accomplish the
+        goal;
+        however, the bison-evolve algorithm is a special
+        type of genetic algorithm that is based upon the evolution of asexually-reproducing bacteria. Additionally, this
+        algorithm implements the Bottleneck Effect of Biology,
+        and this effect is coupled with an asexual reproduction model (known as Antibiotic Resistance), to get the most
+        accurate results quickly. Additionally, the algorithm takes
+        the best child of each generation and reproduces that child node into a set number of children, using a weight
+        mutation.
+
+        <br />
+        <br />
+
+        This library fills the void of having a strong and easy-to-use, object-based ML library
+        for the most popular server-side language, JavaScript. The wide variety of tasks that are 
+        able to be accomplished with this library makes it very compelling to use in a JavaScript
+        environment such as the browser or in Node.js.
+
+        <br />
+        <br />
+
+        Some of the uses for this technology could be agent-based games, recommendation engines,
+        image recognition, classification techniques, day trading, etc. The speed of this algorithm
+        makes it an excellent choice for power tasks that require speed and precision. In our own research
+        we created a day trading bot and a tic-tac-toe/connect-four bot, in which the ML system easily defeats
+        and surpasses human players. We pride ourselves in the versatility of the software.
+      </div>
+      <br />
+
+      <button id="startButton" class="margin"
+        onclick="window.open('https://github.com/yamunasoftware/Surabhi.js/archive/refs/heads/main.zip');"> Download
+      </button>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- YSS_VISION_LIB -->
+    <div id="java" class="coloredContainer lightCard center spacing pad">
+      <div class="center important extra-important"> JVision </div>
+      <br />
+
+      <div>
+        This vision library is an add on library for basic vision tasks that can be done 
+        quickly and efficiently without having to load a very large library to run the code.
+        This library can also be combined with another ML library to do more powerful vision 
+        tasks (such as image detection, feature recognition, etc) much faster than other libraries
+        out there. The main advantage is the speed and usability across many devices for this library.
+        This mainly fills the gap of having a small, yet powerful vision library, which can be used
+        in an environment (such as Java) which is compatible with every device. 
+
+        <br />
+        <br />
+
+        Some features that are included in this vision library are color detection, motion detection, image masks, 
+        image convolutions, distortion and noise correction, lighting analysis, low-level image processing, and 
+        real-life positioning capabilities using our VPS (Vision Positioning System) algorithm. This library and its
+        features can be used alone for tasks such as basic image analysis, processing, or even AR. Additionally, the library
+        can be augmented with a machine learning or neural network framework, to do some more complicated vision tasks, that
+        use this vision library as a base. 
+        
+        <br />
+        <br />
+
+        Furthermore, if you would like to use our Surabhi.js machine learning framework to run this library in conjunction with, 
+        you can do so, using a ScriptEngine or running this code on a backend server and have the Surabhi.js library run in the frontend.
+        Thus, if you want to, you can use both of our ML tools in your projects as well, which is very powerful as we have developed these internal 
+        tools with very complex projects in mind.
+        
+        <br />
+        <br />
+
+        If you would like to use the JAmuna ML tool, listed below, in conjunction with this vision library, 
+        then it is very simple because both pieces of software are written in Java making it easy to integrate 
+        into any system, project, or environment. The best part about this integration is that Java is an 
+        Object-Oriented language which means that the user can use these classes easily as objects, which contain
+        all of the methods and variables necessary to run Machine Learning pipelines.
+      </div>
+      <br />
+
+      <button id="startButton" class="margin"
+        onclick="window.open('https://github.com/yamunasoftware/JVision/archive/refs/heads/main.zip');"> Download
+      </button>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- JAmuna -->
+    <div id="java" class="coloredContainer cardStyle center spacing pad">
+      <div class="center important extra-important"> JAmuna </div>
+      <br />
+
+      <div>
+        The JAmuna Learning Library is similar to other Machine Learning libraries in that it uses supervised learning
+        with traditional techniques such as weights, biases, and dot-products. However, the difference between
+        most other learning libraries and JAmuna is that JAmuna uses the same genetic algorithm that is used in
+        the Surabhi.js library. 
+
+        <br />
+        <br />
+
+        This is a special type of genetic algorithm that is based upon the evolution of asexually-reproducing bacteria. 
+        Additionally, this algorithm implements the Bottleneck Effect of Biology,
+        and this effect is coupled with an asexual reproduction model (known as Antibiotic Resistance), to get the most
+        accurate results quickly. Additionally, the algorithm takes the best child of each generation and reproduces that 
+        child node into a set number of children, using a weight mutation.
+      </div>
+      <br />
+
+      <button id="startButton" class="margin"
+        onclick="window.open('https://github.com/yamunasoftware/JAmuna/archive/refs/heads/main.zip');"> Download
+      </button>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div id="footer" class="center spacing">
+      &copy; 2022 YSS &nbsp; <a style="color: #000000;" class="no-decoration" href="https://github.com/yamunasoftware"> GitHub </a>
+    </div>
+  </div>
+</body>
+
+</html>
