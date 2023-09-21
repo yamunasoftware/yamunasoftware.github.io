@@ -97,14 +97,7 @@
       <div>
         OpenML is a collection of tools that we use at Yamuna Software regularly that we have open-sourced
         to the public. We use these tools in our applications and we have others that use these libraries
-        in their development environment. 
-
-        <br />
-        <br />
-
-        The tools work through a genetic algorithm which takes in a series of inputs and evolves a single or a 
-        set of weights until a desired action is performed. Furthermore, a secondary algorithm is used as a lookup table 
-        to verify the results of the genetic algorithm. Scroll down to learn more.
+        in their product development environments. 
       </div>
       <br />
     </div>
@@ -113,46 +106,17 @@
     <br />
     <br />
 
-    <!-- YSS_VISION_LIB -->
+    <!-- JVision -->
     <div id="java" class="coloredContainer lightCard center spacing pad">
       <div class="center important extra-important"> JVision </div>
       <br />
 
       <div>
-        This vision library is an add on library for basic vision tasks that can be done 
-        quickly and efficiently without having to load a very large library to run the code.
-        This library can also be combined with another ML library to do more powerful vision 
-        tasks (such as image detection, feature recognition, etc) much faster than other libraries
-        out there. The main advantage is the speed and usability across many devices for this library.
-        This mainly fills the gap of having a small, yet powerful vision library, which can be used
-        in an environment (such as Java) which is compatible with every device. 
+        JVision is a Java library for accomplishing simple but powerful computer vision tasks. When combined with another library, this library could be more powerful than it already is. Some of the possible tasks that this library can perform include: blob detection, color detection, lighting correction, noise correction, color separation, filters and blurs, convolutions, 3D mapping.
 
-        <br />
-        <br />
+        The main functionality of the library is located in the "Analyze.java" class, which is a child of the "Camera.java" class which is a collection of important image manipulation methods (using the BufferedImage data structure). The "Analyze" class contains all of the main image processing methods such as color detection, blob detection, and color separation. The 3D mapping or positioning methods are contained inside of the "Positioning.java" class. Furthermore, the lighting correction and detection methods are stored in the "Lighting.java" class.
 
-        Some features that are included in this vision library are color detection, motion detection, image masks, 
-        image convolutions, distortion and noise correction, lighting analysis, low-level image processing, and 
-        real-life positioning capabilities using our VPS (Vision Positioning System) algorithm. This library and its
-        features can be used alone for tasks such as basic image analysis, processing, or even AR. Additionally, the library
-        can be augmented with a machine learning or neural network framework, to do some more complicated vision tasks, that
-        use this vision library as a base. 
-        
-        <br />
-        <br />
-
-        Furthermore, if you would like to use our Surabhi.js machine learning framework to run this library in conjunction with, 
-        you can do so, using a ScriptEngine or running this code on a backend server and have the Surabhi.js library run in the frontend.
-        Thus, if you want to, you can use both of our ML tools in your projects as well, which is very powerful as we have developed these internal 
-        tools with very complex projects in mind.
-        
-        <br />
-        <br />
-
-        If you would like to use the JAmuna ML tool, listed below, in conjunction with this vision library, 
-        then it is very simple because both pieces of software are written in Java making it easy to integrate 
-        into any system, project, or environment. The best part about this integration is that Java is an 
-        Object-Oriented language which means that the user can use these classes easily as objects, which contain
-        all of the methods and variables necessary to run Machine Learning pipelines.
+        The noise correction and filters are located in the "ImageCorrection.java" class, which is also connected to the convolutions methods. The blurring and convolutions methods are located in the "ImageProcessing.java" class, which is useful for Gaussian blurring, machine learning, edge detection, and color separation. This class is the pride of our library and this class allows for most of the powerful image processing technology that our library provides. Finally, we have a series of tests located in the "Tests.java" class, which provides a series of methods to test the validity and functionality of your build for this library.
       </div>
       <br />
 
@@ -175,31 +139,7 @@
       <br />
 
       <div>
-        The JAmuna Learning Library is similar to other Machine Learning libraries in that it uses supervised learning
-        with traditional techniques such as weights, biases, and dot-products. However, the difference between
-        most other learning libraries and JAmuna is that JAmuna uses a genetic algorithm to learn and evolve between
-        an array of neural networks to attain the best possible network for the task at hand.
-        
-        <br />
-        <br />
-
-        The JAmuna library is a machine learning library that is built from using neural networks to get better 
-        results from you testing. The library uses a special method to learn where it creates multiple neural 
-        networks and evolves to a better and better network with added data. The more that the data is 
-        aggregated and used to train this system, the better the resulting network will be. This method is a 
-        little more computationally expensive when compared to the traditional Back-Propagation Learning; 
-        however, the resulting training process is much easier to visualize and achieve great performance as 
-        well. The library is designed to handle classification and class-based machine learning tasks, which 
-        is perfect for many applications of the technology.
-
-        <br />
-        <br />
-
-        This is a special type of genetic algorithm that is based upon the evolution of asexually-reproducing bacteria. 
-        Additionally, this algorithm implements the Bottleneck Effect of Biology,
-        and this effect is coupled with an asexual reproduction model (known as Antibiotic Resistance), to get the most
-        accurate results quickly. Additionally, the algorithm takes the best child of each generation and reproduces that 
-        child node into a set number of children, using a weight mutation.
+        The JAmuna library is a machine learning library that is built from using neural networks to get better results from you testing. This is an implementation on the traditional style of using Gradient Descent with Back Propagation to train a neural network. This library also acts as a framework for being able to create neural networks of any size to use methods like deep learning to be able to do more complex tasks.
       </div>
       <br />
 
