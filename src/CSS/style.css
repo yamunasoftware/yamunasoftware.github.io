@@ -383,6 +383,10 @@ main {
   outline: none;
 }
 
+.nav-button.selected {
+  color: #80ccff;
+}
+
 #startButton {
   font-size: 25px;
   text-decoration: none;
