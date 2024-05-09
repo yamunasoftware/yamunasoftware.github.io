@@ -341,6 +341,7 @@ main {
 }
 
 /* BUTTON */
+
 #group {
   margin: 0px;
   margin-top: 20px;
@@ -366,6 +367,19 @@ main {
   border-radius: 0px;
   margin: 5px;
   margin-left: 0px;
+  outline: none;
+}
+
+.nav-button {
+  margin: 0px;
+  padding: 0px;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: none;
   outline: none;
 }
 
@@ -406,7 +420,6 @@ main {
     animation: slide 0.75s;
   }
 }
-
 
 @media (min-width: 993px) {
   .group {
