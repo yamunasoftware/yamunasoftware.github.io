@@ -1,0 +1,34 @@
+{
+  "name": "Yamuna Software",
+  "short_name": "Yamuna",
+  "start_url": "https://yamunasoftware.github.io",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#EEEEEE",
+  "theme_color": "#EEEEEE",
+  "description": "Yamuna Software Website",
+  "icons": [
+    {
+      "src": "/src/Images/large_icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/Images/medium_icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/Images/small_icon.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "url": "https://yamunasoftware.github.io",
+  "manifestUrl": "https://yamunasoftware.github.io/manifest.json",
+  "lang": "en-US",
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7"
+}

@@ -1,0 +1,29 @@
+@font-face { 
+  font-family: "montserrat-semibold"; 
+  src: url("/src/Fonts/Montserrat-SemiBold.ttf"); 
+}
+  
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("/src/Fonts/Montserrat-Regular.ttf")
+}
+
+@font-face {
+  font-family: "montserrat-bold";
+  src: url("/src/Fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-extrabold";
+  src: url("/src/Fonts/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "nunito-bold";
+  src: url("/src/Fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+  font-family: "pragati_narrow-bold";
+  src: url("/src/Fonts/PragatiNarrow-Bold.ttf");
+}

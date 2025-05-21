@@ -1,0 +1,622 @@
+/* HTML AND CONTAINERS */
+html, body {
+  margin: 0px;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+#container, #content {
+  margin: 0px;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #FFFFFF;
+}
+
+/* SCROLLING */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #80ccff; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #007FFF; 
+}
+
+/* BACKGROUND COLORS */
+.color {
+  color: #FFFFFF;
+  font-size: 200%;
+}
+
+.selected {
+  color: #80ccff;
+}
+
+.gradient {
+  background-image: linear-gradient(to right, #80ccff, #007FFF);
+}
+
+.mesh-gradient {
+  background-image: url(/src/Images/mesh-gradient.png);
+}
+
+.second-gradient {
+  background-image: url(/src/Images/second-gradient.png);
+}
+
+/* CARD STYLES */
+.cardStyle {
+  background-color: #80ccff;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.lightCard {
+  background-color: #e0e0e0;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+/* PADDING */
+.pad {
+  padding: 10px;
+}
+
+.bottom-pad {
+  padding-bottom: 40px;
+}
+
+.startPad {
+  padding-bottom: 20px;
+}
+
+.naturalPad {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+/* TEXT */
+.no-decoration {
+  text-decoration: none;
+}
+
+.important {
+  font-size: 60px;
+}
+
+.more-important {
+  font-size: 60px;
+}
+
+.less-important {
+  font-size: 40px;
+}
+
+.extra-important {
+  font-family: "montserrat-extrabold";
+}
+
+/* ALIGNMENT */
+.center {
+  text-align: center;
+}
+
+.fill {
+  height: 100%;
+}
+
+/* ANIMATIONS */
+.slide {
+  position: relative;
+}
+
+@keyframes slide {
+  from {
+    left: -300px;
+    opacity: 0px;
+  }
+
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+/* STYLE CONTAINERS */
+.coloredContainer {
+  font-family: "montserrat-semibold", Arial, Verdana;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.coloredSubcontainer {
+  font-family: "montserrat-semibold", Arial, Verdana;
+  font-size: 30px;
+  padding: 10px;
+  margin: 0px;
+}
+
+.animationContainer {
+  height: 100vh;
+  font-family: "montserrat-semibold", Arial, Verdana;
+  color: #000000;
+  margin: 0px;
+}
+
+/* TEXT INPUTS */
+.text {
+  border-radius: 0px;
+  width: 50%;
+  border: 2px solid #000000;
+  font-family: "montserrat-semibold", Arial, Verdana;
+  cursor: pointer;
+}
+
+.text:focus {
+  outline-color: #000000;
+  outline-style: solid;
+  outline-width: medium;
+}
+
+/* FORM CSS */
+#contactForm {
+  width: 100%;
+  height: 100%;    
+}
+
+#contactForm label {
+  font-family: "montserrat-semibold", Arial, Verdana;  
+}
+
+/* MAIN SPACING */
+.spacing {
+  margin-top: 80px;
+}
+
+.secondary-spacing {
+  margin-top: 40px;
+}
+
+/* SLIGHT SPACING */
+.slight {
+  margin-top: 3px;
+}
+
+.slight-bottom {
+  margin-bottom: 5px;
+}
+
+/* HEADER  */
+header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#title {
+  padding-left: 10px;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: "pragati_narrow-bold", Arial, Verdana;
+  font-size: 40px;
+  font-weight: bold;
+  height: 100%;
+  padding-bottom: 5px;
+}
+
+.accent {
+  color: #80ccff;
+}
+
+/* MAIN CONTENT */
+main {
+  clear: both;
+  float: below;
+  font-family: "montserrat-regular", Arial, Verdana;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+  color: #000000;
+  overflow: auto;
+}
+
+#ph {
+  font-family: "montserrat-extrabold", Arial, Verdana;
+  font-size: 25px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+/* SECTIONS */
+#sectionHead {
+  font-family: "montserrat-extrabold", Arial, Verdana;
+}
+
+#subSectionHead {
+  font-family: "montserrat-bold", Arial, Verdana;
+}
+
+.sectionHead {
+  font-family: "montserrat-extrabold", Arial, Verdana;
+}
+
+.subSectionHead {
+  font-family: "montserrat-bold", Arial, Verdana;
+}
+
+/* FOOTER */
+#footer {
+  bottom: 0;
+  width: 100%;
+  font-family: "montserrat-semibold", Arial, Verdana;
+  font-size: 18px;
+  color: #000000;
+  height: auto;
+  position: relative;
+  clear: both;
+  background-color: #FFFFFF;
+}
+
+.right {
+  padding-right: 10px;
+}
+
+/* SIDEBAR */
+#sidebar {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+/* MENU BUTTON */
+#menu {
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  padding-right: 10px;
+  padding-top: auto;
+  position: absolute;
+  float: right; 
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 0px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+#bar1, #bar2, #bar3 {
+  width: 20px;
+  height: 3px;
+  background-color: #000000;
+  margin: 3px;
+}
+
+/* NAV BUTTON */
+#nav-group { 
+  margin: 0px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  text-align: left;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  display: block;
+  outline: none;
+}
+
+#nav-icon {
+  margin: 0px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  font-size: 70px;
+  text-align: left;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  display: block;
+  outline: none;
+}
+
+/* BUTTON */
+
+#group {
+  margin: 0px;
+  margin-top: 20px;
+  margin-right: 20px;
+  float: right;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 0px;
+  outline: none;
+}
+
+#pGroup button, #button {
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #000000;
+  border: none;
+  border-radius: 0px;
+  margin: 5px;
+  margin-left: 0px;
+  outline: none;
+}
+
+.nav-button {
+  margin: 0px;
+  padding: 0px;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+}
+
+.nav-button.selected {
+  color: #80ccff;
+}
+
+#startButton {
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #000000;
+  border: none;
+  border-radius: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 20px;
+  outline: none;
+}
+
+#nav-group, #menu, #group, #pGroup button, #startButton, #button {
+  font-family: "montserrat-bold", Arial, Verdana;
+}
+
+#nav-icon {
+  font-family: "nunito-bold", Arial, Verdana;
+}
+
+#nav-group:hover, #menu:hover, #group:hover {
+  color: #80ccff;
+}
+
+#startButton:hover, #pGroup button:hover, #button:hover {
+  background-color: #80ccff;
+}
+
+/* MEDIA QUERIES */
+@media (prefers-reduced-motion: no-preference) {
+  .slide {
+    animation: slide 0.75s;
+  }
+}
+
+@media (min-width: 993px) {
+  .group {
+    display: block !important;
+  }
+
+  #menu {
+    display: none !important;
+  }
+
+  #sidebar {
+    display: none !important;
+  }
+
+  #container {
+    display: block !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .group {
+    display: none !important;
+  }
+
+  #menu {
+    display: block !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .coloredContainer {
+    font-size: 25px;
+  }
+
+  .coloredSubcontainer {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  .animationContainer {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 550px) {
+  .animationContainer {
+    font-size: 50px;
+  }
+
+  .coloredContainer {
+    font-size: 20px;
+  }
+
+  .coloredSubcontainer {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .animationContainer {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .animationContainer {
+    font-size: 30px;
+  }
+
+  .coloredContainer {
+    font-size: 15px;
+  }
+
+  .coloredSubcontainer {
+    font-size: 15px;
+  }
+
+  #startButton {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 285px) {
+  .animationContainer {
+    font-size: 20px;
+  }
+
+  .coloredContainer {
+    font-size: 10px;
+  }
+
+  .coloredSubcontainer {
+    font-size: 10px;
+  }
+
+  #startButton {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 195px) {
+  .animationContainer {
+    font-size: 10px;
+  }
+
+  #startButton {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  header #title {
+    font-size: 30px;
+  }
+
+  main {
+    font-size: 15px;
+  }
+
+  main #ph {
+    font-size: 20px;
+  }
+
+  #pGroup button, #button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 300px) {
+  header #title {
+    font-size: 25px;
+  }
+
+  main {
+    font-size: 10px;
+  }
+
+  main #start {
+    font-size: 20px;
+  }
+
+  main #ph {
+    font-size: 15px;
+  }
+
+  #pGroup button, #button {
+    font-size: 10px;
+  }
+
+  #nav-icon {
+    font-size: 40px;
+  }
+  
+  #nav-group {
+    font-size: 30px;
+  } 
+
+  #copyright {
+    font-size: 8px;
+  }
+
+  #footer {
+    height: 0.5%;
+  }
+}
+
+@media (max-width: 225px) {
+  header #title {
+    font-size: 20px;
+  }
+
+  main {
+    font-size: 5px;
+  }
+
+  main #start {
+    font-size: 15px;
+  }
+
+  main #ph {
+    font-size: 10px;
+  }
+
+  #pGroup button, #button {
+    font-size: 5px;
+  }
+
+  #nav-icon {
+    font-size: 28px;
+  }
+  
+  #nav-group {
+    font-size: 20px;
+  }
+}

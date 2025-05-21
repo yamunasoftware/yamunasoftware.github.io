@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="description" content="Yamuna Website" />
+<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover" />
+<meta name="theme-color" content="#EEEEEE" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<head>
+  <title> Yamuna Software </title>
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/src/Images/medium_icon.png" />
+  <link rel="apple-touch-startup-image" href="/src/Images/medium_icon.png" />
+  <link rel="shortcut icon" type="image/png" href="/src/Images/small_icon.png" />
+</head>
+
+<link rel="stylesheet" type="text/css" href="/src/CSS/style.css" />
+<link rel="stylesheet" type="text/css" href="/src/CSS/fonts.css" />
+
+<body>
+  <script>
+    //Registers the Service Worker:
+    navigator.serviceWorker.register('/service-worker.js', {
+      scope: 'https://yamunasoftware.github.io'
+    });
+
+    //Opens the Sidebar:
+    function openBar() {
+      //Opens:
+      document.getElementById('sidebar').style.display = "block";
+      document.getElementById('content').style.display = "none";
+    }
+
+    //Closes the Sidebar:
+    function closeBar() {
+      //Closes:
+      document.getElementById('sidebar').style.display = "none";
+      document.getElementById('content').style.display = "block";
+    }
+  </script>
+
+  <div id="sidebar" class="slide">
+    <button id="nav-icon" class="nav-button slide" onclick="closeBar();">x</button>
+    <button id="nav-group" class="nav-button slide selected" onclick="window.location.href = '/index.html';">Home</button>
+    <button id="nav-group" class="nav-button slide" onclick="window.location.href = '/contact.html';">About</button>
+    <button id="nav-group" class="nav-button slide" onclick="window.location.href = 'https://github.com/yamunasoftware';">GitHub</button>
+  </div>
+
+  <div id="content">
+    <div id="container" class="second-gradient">
+      <header>
+        <div id="title">&nbsp;YSS<a class="accent">;</a>
+          <button id="group" class="group" onclick="window.location.href = 'https://github.com/yamunasoftware';">GitHub</button>
+          <button id="group" class="group" onclick="window.location.href = '/contact.html';">About</button>
+          <button id="group" class="group selected" onclick="window.location.href = '/index.html';">Home</button>
+          <button id="menu" onclick="openBar();">
+            <div id="bar1"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <!-- Main Start -->
+        <div class="animationContainer important center pad bottom-pad">
+          <div class="startPad">
+            <div class="color" style="margin-bottom: 30px;"> Yes, 100% Open </div>
+            <br />
+
+            Professional Tools. Fully Open Source.
+          </div>
+
+          <button id="startButton" class="margin" onclick="window.location.href = 'https://github.com/yamunasoftware';"> Learn
+            More </button>
+        </div>
+      </main>
+
+      <br />
+      <br />
+    </div>
+    <br />
+
+    <!-- Open Source -->
+    <div id="open" class="coloredContainer cardStyle spacing center pad">
+      <div class="important extra-important startPad">
+        Open-Source the future.
+      </div>
+      <br />
+
+      <div>
+        We believe in a sustainable future of software where everyone can freely collaborate. <br />
+        We believe in an open way of developing professional solutions. <br />
+        We do not believe in profit-driven technology and discovery. <br />
+        We believe in you. Collaborate with us today.
+      </div>
+      <br />
+
+      <button id="startButton" class="margin" onclick="window.open('https://github.com/yamunasoftware');"> View
+        Github </button>
+
+      <br />
+      <br />
+    </div>
+    <br />
+
+    <!-- About Us -->
+    <div id="about" class="coloredContainer lightCard center spacing">
+      <div class="important extra-important"> About Us </div>
+      <br />
+
+      <div>
+        Yamuna Software Solutions is a non-profit organization dedicated to help improve the technological world through
+        software.
+        We are also dedicated to the open-source environment, and we believe that profit-based proprietary technology
+        holds back technological progress.
+
+        <br />
+        <br />
+
+        Due to this belief, we have open-sourced
+        all of our projects under the MIT License for everyone to share openly.
+        We believe that if we start the ball rolling in many different projects, we can
+        inspire people all over the world to invest time into developing
+        truly influential and global-scale technologies, that will leave a
+        lasting impact on the world.
+
+        <br />
+        <br />
+
+        <div id="ph"> Our Story </div>
+
+        Amid the 2020 SARS-COV-2 Pandemic we started to notice more and
+        more companies beginning to make their technologies proprietary
+        and unaccessible to others. Companies began to collect huge sums
+        of money and power from other developers who have no option but
+        to pay to exist on a platform created by others. We began to see
+        the laws of data privacy fade and the importance of ad revenue
+        grow. Thus, we committed to making all of our technology without
+        collecting data, charging outrageous sums of money, or making
+        our advances in technology proprietary. We are determined to
+        sticking to this path and goal during the development of our
+        various software tools.
+      </div>
+      <br />
+
+      <button id="startButton" class="margin" onclick="window.location.href = '/contact.html';">Learn More </button>
+    </div>
+    <br />
+
+    <div id="footer" class="center spacing">
+      &copy; 2025 YSS &nbsp; <a style="color: #000000;" class="no-decoration" href="https://github.com/yamunasoftware">
+        GitHub </a>
+    </div>
+  </div>
+</body>
+
+</html>

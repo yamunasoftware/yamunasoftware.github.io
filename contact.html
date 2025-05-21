@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="utf-8" />
+<meta name="description" content="Yamuna Website" />
+<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover" />
+<meta name="theme-color" content="#EEEEEE" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  
+<head>
+  <title> Yamuna Software </title>
+  
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/src/Images/medium_icon.png" />
+  <link rel="apple-touch-startup-image" href="/src/Images/medium_icon.png" />
+  <link rel="shortcut icon" type="image/png" href="/src/Images/small_icon.png" />
+</head>
+
+<link rel="stylesheet" type="text/css" href="/src/CSS/style.css" />
+<link rel="stylesheet" type="text/css" href="/src/CSS/fonts.css" />
+
+<body>
+  <script>
+    //Registers the Service Worker:
+    navigator.serviceWorker.register('/service-worker.js', {
+      scope: 'https://yamunasoftware.github.io'
+    });
+
+    //Opens the Sidebar:
+    function openBar() {
+      //Opens:
+      document.getElementById('sidebar').style.display = "block";
+      document.getElementById('content').style.display = "none";
+    }
+
+    //Closes the Sidebar:
+    function closeBar() {
+      //Closes:
+      document.getElementById('sidebar').style.display = "none";
+      document.getElementById('content').style.display = "block";
+    }
+  </script>
+
+  <div id="sidebar" class="slide">
+    <button id="nav-icon" class="nav-button slide" onclick="closeBar();">x</button>
+    <button id="nav-group" class="nav-button slide" onclick="window.location.href = '/index.html';">Home</button>
+    <button id="nav-group" class="nav-button slide selected" onclick="window.location.href = '/src/HTML/contact.html';">About</button>
+    <button id="nav-group" class="nav-button slide" onclick="window.location.href = 'https://github.com/yamunasoftware';">GitHub</button>
+  </div>
+
+  <div id="content">
+    <div id="container">
+      <header>
+        <div id="title">&nbsp;YSS<a class="accent">;</a>
+          <button id="group" class="group" onclick="window.location.href = 'https://github.com/yamunasoftware';">GitHub</button>
+          <button id="group" class="group selected" onclick="window.location.href = '/contact.html';">About</button>
+          <button id="group" class="group" onclick="window.location.href = '/index.html';">Home</button>
+          <button id="menu" onclick="openBar();">
+            <div id="bar1"></div>
+            <div id="bar2"></div>
+            <div id="bar3"></div>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <div class="coloredContainer lightCard center">
+          <div id="ph" class="pad"> About Us </div>
+
+          Yamuna Software Solutions is a non-profit organization dedicated to help improve the technological world
+          through
+          software.
+          We are also dedicated to the open-source environment, and we believe that profit-based proprietary technology
+          holds back technological progress.
+
+          <br />
+          <br />
+
+          Due to this belief, we have open-sourced
+          all of our projects under the MIT License for everyone to share openly.
+          We believe that if we start the ball rolling in many different projects, we can
+          inspire people all over the world to invest time into developing
+          truly influential and global-scale technologies, that will leave a
+          lasting impact on the world.
+
+          <br />
+          <br />
+        </div>
+        <br />
+
+        <div class="coloredContainer spacing center cardStyle">
+          <div id="sectionHead"><b> Our History </b></div>
+          <br />
+
+          Yamuna Software Solutions (YSS) was founded in 2016 in St. Louis, MO,
+          USA by Sushen Kolakaleti. Initially, the organization was just a
+          public platform to test and grow programming skills. However,
+          we wanted to tackle the problem of building powerful open-source
+          software.
+
+          <br />
+          <br />
+
+          Amid the 2020 SARS-COV-2 Pandemic we started to notice more and
+          more companies beginning to make their technologies proprietary
+          and unaccessible to others. Companies began to collect huge sums
+          of money and power from other developers who have no option but
+          to pay to exist on a platform created by others. We began to see
+          the laws of data privacy fade and the importance of ad revenue
+          grow. Thus, we committed to making all of our technology without
+          collecting data, charging outrageous sums of money, or making
+          our advances in technology proprietary. We are determined to
+          sticking to this path and goal during the development of our
+          various software tools.
+
+          <br />
+          <br />
+
+          <button id="startButton" class="margin" onclick="window.open('https://github.com/yamunasoftware');">
+            View Github </button>
+        </div>
+        <br />
+
+        <div class="coloredContainer lightCard center spacing">
+          <div id="sectionHead"><b> We Need You </b></div>
+          <br />
+
+          If you would like to join our organization, please contact us.
+          You can use the contact form below or email us at yamunasoftware18@gmail.com.
+          We are always welcoming to new members, no matter what
+          your skill set is. Below we have listed the skills that are in high demand for us.
+
+          <br />
+          <br />
+
+          YSS would love to see more talented and influential people invest into
+          a more sustainable, connected, and decentralized future, where technology
+          is key.
+
+          <br />
+          <br />
+
+          <div class="coloredSubcontainer secondary-spacing card gradient">
+            <div id="subSectionHead"> Social Media Enthusiasts </div>
+            <br />
+
+            We are in need of social media personalities and
+            social media enthusiasts to help with publicity
+            and message.
+          </div>
+          <br />
+
+          <div class="coloredSubcontainer secondary-spacing card gradient">
+            <div id="subSectionHead"> UI/UX Designers </div>
+            <br />
+
+            We are in need of website and logo designers for
+            our company website.
+          </div>
+          <br />
+
+          <div class="coloredSubcontainer secondary-spacing card gradient">
+            <div id="subSectionHead"> Software Engineers </div>
+            <br />
+
+            We are in need of engineers for apps,
+            frameworks, libraries, etc.
+          </div>
+          <br />
+
+          <div class="coloredSubcontainer secondary-spacing card slight-bottom gradient">
+            <div id="subSectionHead"> Data Scientists </div>
+            <br />
+
+            We are in need of algorithm designers and data analysis
+            scientists for our various machine learning problems.
+          </div>
+          <br />
+        </div>
+        <br />
+
+        <div id="contact" class="coloredContainer spacing center cardStyle">
+          <div id="sectionHead"><b> Give Us Feedback </b></div>
+          <br />
+
+          <form id="contactForm"
+            action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdv2jXs6p0aDGJb8EK_00Bccwtc65imIzuSYRlXNFs5Zc4HhQ/formResponse"
+            target="_self" method="POST" id="mG61Hd">
+            <label> Email </label>
+            <br />
+
+            <input id="name" type="text" class="text slight" name="entry.1082650063" />
+
+            <br />
+            <br />
+
+            <label> Message </label>
+            <br />
+
+            <textarea id="message" class="text slight" form="contactForm" name="entry.2146167169"></textarea>
+
+            <br />
+            <br />
+
+            <div id="pGroup">
+              <input type="submit" value="Submit" id="button" />
+            </div>
+          </form>
+          <br />
+        </div>
+        <br />
+
+        <div id="footer" class="center spacing">
+          &copy; 2025 YSS &nbsp; <a style="color: #000000;" class="no-decoration" href="https://github.com/yamunasoftware"> GitHub </a>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
